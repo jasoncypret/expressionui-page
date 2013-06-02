@@ -1,24 +1,90 @@
 
 header.header
   .inner
-    .logo.icon e
+    .logo.icon 1
     h1 expressionui
     h2 A set of small JavaScript and SASS plugins that are designed to be reusable and enhance your UI. Ready to play with the Rails Asset Pipeline for faster and easier web development.
     a.btn href="https://github.com/jasoncypret/expressionUI" View project on GitHub
 section.section.group
-  h3.icon_left data-icon="d"
+  h3.icon_left data-icon="d" Notifications
+  .inner
+
+    h4 Success Message
+    .example.notify_container.content_visible
+      == partial "shared/notify", locals: { position: "top", style: "success", message: "Your success message goes here"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+    h4 Tip Message
+    .example.notify_container.content_visible
+      == partial "shared/notify", locals: { position: "top", style: "tip", message: "Your tip goes here"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+    h4 Info Message
+    .example.notify_container.content_visible
+      == partial "shared/notify", locals: { position: "top", style: "info", message: "Your info goes here"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+    h4 Error Message
+    .example.notify_container.content_visible
+      == partial "shared/notify", locals: { position: "top", style: "error", message: "Your error goes here"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+    
+
+
+section.section.group
+  h3.icon_left data-icon="d" Loading
+  .inner
+    h4 Loading Circles
+    .example.notify_container.content_hidden
+      == partial "shared/notify", locals: { loading: "circles", position: "middle", style: "none"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+    h4 Loading Dots
+    .example.notify_container.content_hidden
+      == partial "shared/notify", locals: { loading: "dots", position: "middle", style: "none"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+    h4 Loading Progress
+    .example.notify_container.content_hidden
+      == partial "shared/notify", locals: { loading: "bars", position: "middle", style: "none"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+    h4 Loading Spinner
+    .example.notify_container.content_hidden
+      == partial "shared/notify", locals: { loading: "spinner", position: "middle", style: "none"}
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Ex rebus enim timiditas, non ex vocabulis nascitur. Maximus dolor, inquit, brevis est. Istic sum, inquit. Ut pulsi recurrant? Simus igitur contenti his.
+
+section.section.group
+  h3.icon_left data-icon="d" Modals
   .inner
 section.section.group
-  h3.icon_left data-icon="d"
+  h3.icon_left data-icon="d" Buttons
+  .inner
+    .group
+      a.btn href="javascript:;" Default Button
+      button.btn Default Button
+    .group
+      a.accent.btn href="javascript:;" Accent Button
+      button.accent.btn Accent Button
+    .group
+      a.main.btn href="javascript:;" Main Button
+      button.main.btn Main Button
+    .group
+      a.contrast.btn href="javascript:;" Contrast Button
+      button.contrast.btn Contrast Button
+
+    .group
+      a.xsmall.btn href="javascript:;" Extra Small Button
+      a.small.btn href="javascript:;" Small Button
+      a.btn href="javascript:;" Regular Button
+      a.large.btn href="javascript:;" Large Button
+      a.xlarge.btn href="javascript:;" Extra Large Button
+
+section.section.group
+  h3.icon_left data-icon="d" Popover
   .inner
 section.section.group
-  h3.icon_left data-icon="d"
-  .inner
-section.section.group
-  h3.icon_left data-icon="d"
-  .inner
-section.section.group
-  h3.icon_left data-icon="d"
+  h3.icon_left data-icon="d" Forms
   .inner
     .form
       h4 Standard
@@ -79,21 +145,75 @@ section.section.group
       .group
         h4 Selects
         select
-          option value="A"
-          option value="A2"
+          option value="A" A
+          option value="A2" 
           option value="B1"
           option value="B2"
           option value="B3"
           option value="C1"
           option value="C2"
 section.section.group
-  h3.icon_left data-icon="d"
+  h3.icon_left data-icon="d" Icon Font
   .inner
+    .icon_left data-icon=":" 
+      |:
+    .icon_left data-icon="!"  !
+    .icon_left data-icon="+"  +
+    .icon_left data-icon="/" 
+      |/
+    .icon_left data-icon="["  [
+    .icon_left data-icon="]"  ]
+    .icon_left data-icon="0"  0
+    .icon_left data-icon="1"  1
+    .icon_left data-icon="2"  2
+    .icon_left data-icon="3"  3
+    .icon_left data-icon="4"  4
+    .icon_left data-icon="5"  5
+    .icon_left data-icon="6"  6
+    .icon_left data-icon="7"  7
+    .icon_left data-icon="8"  8
+    .icon_left data-icon="9"  9
+    .icon_left data-icon="A"  A
+    .icon_left data-icon="B"  B
+    .icon_left data-icon="C"  C
+    .icon_left data-icon="D"  D
+    .icon_left data-icon="E"  E
+    .icon_left data-icon="F"  F
+    .icon_left data-icon="G"  G
+    .icon_left data-icon="H"  H
+    .icon_left data-icon="I"  I
+    .icon_left data-icon="J"  J
+    .icon_left data-icon="K"  K
+    .icon_left data-icon="L"  L
+    .icon_left data-icon="M"  M
+    .icon_left data-icon="N"  N
+    .icon_left data-icon="O"  O
+    .icon_left data-icon="P"  P
+    .icon_left data-icon="Q"  Q
+    .icon_left data-icon="R"  R
+    .icon_left data-icon="S"  S
+    .icon_left data-icon="T"  T
+    .icon_left data-icon="U"  U
+    .icon_left data-icon="V"  V
+    .icon_left data-icon="W"  W
+    .icon_left data-icon="X"  X
+    .icon_left data-icon="Y"  Y
+    .icon_left data-icon="Z"  Z
+    .icon_left data-icon="a"  a
+    .icon_left data-icon="d"  d
+    .icon_left data-icon="e"  e
+    .icon_left data-icon="f"  f
+    .icon_left data-icon="i"  i
+    .icon_left data-icon="l"  l
+    .icon_left data-icon="p"  p
+    .icon_left data-icon="q"  q
+    .icon_left data-icon="r"  r
+    .icon_left data-icon="s"  s
+    .icon_left data-icon="t"  t
+    .icon_left data-icon="w"  w
+    .icon_left data-icon="x"  x
 section.section.group
-  h3.icon_left data-icon="d"
-  .inner
-section.section.group
-  h3.icon_left data-icon="d"
+  h3.icon_left data-icon="d" Post Styling
   .inner
 footer
   | This site is built with ExpressionUI
